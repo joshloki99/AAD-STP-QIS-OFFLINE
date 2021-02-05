@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Counrty"
+       android:id="@+id/tv_country"
+       android:textSize="40sp"
+       android:textColor="#000"
+       android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmed"
+        android:id="@+id/tv_confirmed"
+        android:textSize="40sp"
+        android:textColor="#E91E63"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deaths"
+        android:id="@+id/tv_death"
+        android:textSize="40sp"
+        android:textColor="#FF9800"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recovered"
+        android:id="@+id/tv_recovred"
+        android:textSize="40sp"
+        android:textColor="#239527"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Active"
+        android:id="@+id/tv_active"
+        android:textSize="40sp"
+        android:textColor="#F44336"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/tv_date"
+        android:textSize="40sp"
+        android:textColor="#FF9800"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>
+</layout>
