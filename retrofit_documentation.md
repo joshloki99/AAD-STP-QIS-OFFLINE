@@ -385,8 +385,27 @@ enqueue() asynchronously sends the request and notifies your app with a callback
 	To use enqueue(), you have to implement two callback methods:
 	* onResponse()
 	* onFailure()
-	
-	
+
+## Proper Date format
+```JAVA
+private String forDateFormat(String dt) {
+        String inputPattern="yy-mm-dd";
+        String outputPattern="dd-mm-yy";
+
+        SimpleDateFormat inputFormat=new SimpleDateFormat(inputPattern);
+        SimpleDateFormat outputFormat=new SimpleDateFormat(outputPattern);
+        Date d=null;
+        String str=null;
+        try {
+            d=inputFormat.parse(dt);
+            str=outputFormat.format(d);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return str;
+
+    }
+```
 * **Run the Application**
 
 ## Output Screen 
